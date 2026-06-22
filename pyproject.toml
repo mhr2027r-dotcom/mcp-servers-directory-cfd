@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-servers-directory"
+version = "0.1.0"
+description = "A curated, machine-readable directory of Model Context Protocol (MCP) servers, with a CLI to search, filter, export, and regenerate the catalog."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Amarel Taylor Scott" }]
+keywords = ["mcp", "model-context-protocol", "directory", "registry", "llm", "agents", "tools"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.urls]
+Repository = "https://github.com/Amarel-Taylor-Scott/mcp-servers-directory"
+
+[project.scripts]
+mcp-dir = "main:main"
+
+[tool.setuptools]
+py-modules = ["__version__", "data", "report", "main"]

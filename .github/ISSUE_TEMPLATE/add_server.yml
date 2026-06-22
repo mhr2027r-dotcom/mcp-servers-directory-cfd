@@ -1,0 +1,16 @@
+name: Add / update a server
+description: Suggest a new MCP server or a correction
+labels: ["server"]
+body:
+  - type: input
+    id: name
+    attributes: { label: Server name }
+    validations: { required: true }
+  - type: input
+    id: repo
+    attributes: { label: Repository / homepage URL }
+    validations: { required: true }
+  - type: textarea
+    id: details
+    attributes: { label: Description, category, maintainer, install command }
+    validations: { required: true }
