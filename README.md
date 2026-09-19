@@ -91,7 +91,7 @@ mcp-dir generate            # regenerate this README
 | Server | Description | Maintainer | Lang | Transport | Install |
 |--------|-------------|------------|------|-----------|---------|
 | [Stripe](https://github.com/stripe/agent-toolkit) | Create and inspect Stripe customers, payments, invoices and products. | Stripe ✅ | TypeScript | stdio 🔑 | `npx -y @stripe/mcp --tools=all` |
-| [UnlockFlow MCP](https://github.com/mhr2027r-dotcom/mcp-unlockflow) | Unlock × capital-flow events as MCP tools (UnlockFlowEvent v1; illustrative seeds; NFA). | Capital Flow Desk  | TypeScript | stdio  | `npx -y mcp-remote https://endorsement-development-configured-todd.trycloudflare.com/mcp` |
+| [UnlockFlow MCP](https://github.com/mhr2027r-dotcom/mcp-unlockflow) | Unlock × capital-flow events as MCP tools (UnlockFlowEvent v1; illustrative seeds; NFA). | Capital Flow Desk  | TypeScript | http  | `npx -y mcp-remote https://endorsement-development-configured-todd.trycloudflare.com/mcp` |
 
 ### Memory & Knowledge (4)
 

@@ -229,6 +229,7 @@ SERVERS: list[Server] = [
            repo="https://github.com/stripe/agent-toolkit", auth_required=True, tags=("payments", "billing")),
     Server("UnlockFlow MCP", "Unlock × capital-flow events as MCP tools (UnlockFlowEvent v1; illustrative seeds; NFA).",
            Category.finance, "Capital Flow Desk", language="TypeScript",
+           transports=(Transport.http,),
            install="npx -y mcp-remote https://endorsement-development-configured-todd.trycloudflare.com/mcp",
            repo="https://github.com/mhr2027r-dotcom/mcp-unlockflow",
            homepage="https://mhr2027r-dotcom.github.io/capital-flow-desk-web/",
